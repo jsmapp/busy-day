@@ -153,7 +153,6 @@
 			header.major:before, header.major:after {
 				background: rgba(224, 224, 224, 0.75);
 				content: '';
-        filter:blur(100px);
 				display: block;
 				height: 1px;
 				left: 0;
@@ -331,7 +330,7 @@
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
 			background-image: url("https://s-media-cache-ak0.pinimg.com/736x/75/ec/6c/75ec6c731c4661a90fd0ade642c884bd.jpg");
-      filter:blur(10px);
+
 			content: '';
 			display: block;
 			height: 100%;
@@ -349,7 +348,7 @@
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
 			background-image: url("http://www.visitphilly.com/resize/images/love-park-bkrist-900vp-587x0.jpg");
-      filter:blur(10px);
+
 			content: '';
 			display: block;
 			height: 100%;
@@ -367,7 +366,7 @@
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
 			background-image: url("http://www.orangecoast.com/wp-content/uploads/sites/17/2014/06/ScreenShot2014-06-17at24013PM.png");
-      filter:blur(10px);
+
 			content: '';
 			display: block;
 			height: 100%;
@@ -389,7 +388,7 @@
 			.image.fit img {
 				display: block;
 				width: 10%;
-         filter:blur(10px);
+
 			}
 
 		.image.feature {
@@ -400,7 +399,7 @@
 			.image.feature img {
 				display: block;
 				width: 100%;
-         filter:blur(10px);
+
 			}
 
 		.image.icon {
@@ -409,7 +408,7 @@
 			-o-perspective: 500px;
 			-ms-perspective: 500px;
 			perspective: 500px;
-       filter:blur(10px);
+
 		}
 
 			.image.icon:before {
@@ -429,7 +428,6 @@
 				top: 50%;
 				width: 1em;
 				z-index: 1;
-         filter:blur(10px);
 			}
 
 			.image.icon:hover:before {
