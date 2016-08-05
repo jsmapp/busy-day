@@ -1,0 +1,381 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v2/search?bounds=37.7577,-122.4376%7C37.785381,-122.391681
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - OAuth oauth_consumer_key="<YELP_CONSUMER_KEY>", oauth_nonce="fc03af74bd7b0aeae924dd77e6d3172a",
+        oauth_signature="5RMIYjCpscO7cmi%2Fut4zXUo4uc8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1445634932", oauth_token="<YELP_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 23 Oct 2015 21:15:33 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Node:
+      - api_com
+      - web4-uswest1bprod
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private
+      Expires:
+      - Fri, 23 Oct 2015 21:15:33 GMT
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - bse=8c17f4c66cda6ba1fb341143f9f5a96a; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=nW6xQUf7rY9Po3SuKOewuyAqCFWyU0lgGKRdo0nGW6v5PzMrBCzB0_hlqCOMfbpfXpThc8X-LafR52H3xHDY4uum0jFnylcc;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Thu, 18-Oct-2035 21:15:33
+        GMT
+      Vary:
+      - Accept-Encoding,User-Agent
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-64-0-245-uswest1aprod
+    body:
+      encoding: UTF-8
+      string: '{"region": {"span": {"latitude_delta": 0.027681000000001177, "longitude_delta":
+        0.04591899999999782}, "center": {"latitude": 37.7715405, "longitude": -122.4146405}},
+        "total": 20317, "businesses": [{"is_claimed": false, "rating": 4.5, "mobile_url":
+        "http://m.yelp.com/biz/crepes-a-go-go-san-francisco-2", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 498, "name": "Crepes A Go Go", "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/crepes-a-go-go-san-francisco-2", "categories":
+        [["Creperies", "creperies"], ["Food Stands", "foodstands"]], "phone": "4155031294",
+        "snippet_text": "Don''t let the food truck fool you. These crepes are amazing.\n\nPerfect
+        for the after club scene, Crepes A Go Go is a staple for either going between
+        clubs,...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/lqTsDN3B-LI9fIrEt-bgvw/ms.jpg",
+        "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/bdbd8bGh54lSf8BzWBUOVQ/ms.jpg",
+        "display_phone": "+1-415-503-1294", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "crepes-a-go-go-san-francisco-2", "is_closed": false, "location": {"cross_streets":
+        "Folsom St \u0026 Harrison St", "city": "San Francisco", "display_address":
+        ["350 11th St", "SoMa", "San Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods":
+        ["SoMa"], "postal_code": "94103", "country_code": "US", "address": ["350 11th
+        St"], "coordinate": {"latitude": 37.7710762023926, "longitude": -122.413414001465},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/teds-market-and-delicatessen-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 359, "name": "Ted''s Market \u0026 Delicatessen", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/teds-market-and-delicatessen-san-francisco",
+        "categories": [["Delis", "delis"], ["Sandwiches", "sandwiches"], ["Caterers",
+        "catering"]], "menu_date_updated": 1442078486, "phone": "4155520309", "snippet_text":
+        "Teds is off the hook !!!!\nBest sammich in SF !!!!!\nGreat value and taste.\nGuy
+        made my BLT and said good luck with that !!! Lol", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/9oLhikqyvN3kAlDoW3iECg/ms.jpg",
+        "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/NiSiN8GFm-prKfE26z0Kmg/ms.jpg",
+        "display_phone": "+1-415-552-0309", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "eat24", "id": "teds-market-and-delicatessen-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "11th St \u0026 Lafayette
+        St", "city": "San Francisco", "display_address": ["1530 Howard St", "SoMa",
+        "San Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"],
+        "postal_code": "94103", "country_code": "US", "address": ["1530 Howard St"],
+        "coordinate": {"latitude": 37.7728691101074, "longitude": -122.416229248047},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/nani-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 27, "name": "Nani", "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/nani-san-francisco", "categories": [["Indian",
+        "indpak"], ["Food Delivery Services", "fooddeliveryservices"]], "phone": "4159687262",
+        "snippet_text": "yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum
+        yum yum yum yum yum yum yum yum yum\nso clean. so fresh. so normal.\nrotis
+        - to die for!\nI ordered...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/lSfnIGu-K5weioag_HfqcQ/ms.jpg",
+        "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/u2xuHi7waJ4THOFaUPYKZQ/ms.jpg",
+        "display_phone": "+1-415-968-7262", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "nani-san-francisco", "is_closed": false, "location": {"city": "San
+        Francisco", "display_address": ["SoMa", "San Francisco, CA"], "neighborhoods":
+        ["SoMa"], "country_code": "US", "address": [], "state_code": "CA"}}, {"is_claimed":
+        true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/shizen-vegan-sushi-bar-and-izakaya-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 278, "name": "Shizen Vegan Sushi Bar \u0026 Izakaya", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/shizen-vegan-sushi-bar-and-izakaya-san-francisco",
+        "categories": [["Sushi Bars", "sushi"], ["Japanese", "japanese"], ["Vegan",
+        "vegan"]], "menu_date_updated": 1442230408, "phone": "4156785767", "snippet_text":
+        "Amazing! Incredible! Soooooo delicious! \nEverything blew my mind. \nThe
+        ambience is simple and relaxing, wooded and bambooed .. Very zen. The crowd
+        was hip...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/qNBc17KOonteVfaVCGj0HQ/ms.jpg",
+        "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/tqei8KgiyXawO4YnE-BASA/ms.jpg",
+        "display_phone": "+1-415-678-5767", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "shizen-vegan-sushi-bar-and-izakaya-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Julian Ave \u0026 Stevenson
+        St", "city": "San Francisco", "display_address": ["370 14th St", "Mission",
+        "San Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["Mission"],
+        "postal_code": "94103", "country_code": "US", "address": ["370 14th St"],
+        "coordinate": {"latitude": 37.7682280540466, "longitude": -122.421650066972},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/grandmas-deli-and-cafe-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 85, "name": "Grandma''s Deli \u0026 Cafe", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/grandmas-deli-and-cafe-san-francisco", "categories":
+        [["Coffee \u0026 Tea", "coffee"], ["Sandwiches", "sandwiches"], ["Juice Bars
+        \u0026 Smoothies", "juicebars"]], "menu_date_updated": 1444663510, "phone":
+        "4152520759", "snippet_text": "I had the bagel with cream cheese, cucumber
+        and some other stuff. Delicious.\n\nAlso, the carrot + apple juice was great.\n\nGreat
+        price, working wi-fi, close...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/8AXI2wwV8dqXcAaUBOXbJw/ms.jpg",
+        "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/uR1xEd9mCmpv30aa7AyB7A/ms.jpg",
+        "display_phone": "+1-415-252-0759", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "eat24", "id": "grandmas-deli-and-cafe-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "11th St \u0026 Lafayette St", "city":
+        "San Francisco", "display_address": ["1551 Mission St", "SoMa", "San Francisco,
+        CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"], "postal_code":
+        "94103", "country_code": "US", "address": ["1551 Mission St"], "coordinate":
+        {"latitude": 37.7731895, "longitude": -122.4178696}, "state_code": "CA"}},
+        {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/city-beer-store-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 634, "name": "City Beer Store", "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/city-beer-store-san-francisco", "categories":
+        [["Beer, Wine \u0026 Spirits", "beer_and_wine"], ["Beer Bar", "beerbar"]],
+        "phone": "4155031033", "snippet_text": "Great selection.\nGreat service.\nKnowledgeable
+        and enthusiastic staff.\nCold, delicious beer....\n\nAround the corner from
+        a motorcycle shop.\n\nCheck it out", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/-fAoYeL8NUSUSaHDKeu8rQ/ms.jpg",
+        "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/ZEe4q_8FI4nN9CnUr2JiNg/ms.jpg",
+        "display_phone": "+1-415-503-1033", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "city-beer-store-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Rausch St \u0026 Langton St", "city": "San Francisco", "display_address":
+        ["1168 Folsom St", "SoMa", "San Francisco, CA 94103"], "geo_accuracy": 8.0,
+        "neighborhoods": ["SoMa"], "postal_code": "94103", "country_code": "US", "address":
+        ["1168 Folsom St"], "coordinate": {"latitude": 37.77578, "longitude": -122.40965},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/azucar-lounge-san-francisco-4",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 440, "name": "Azucar Lounge", "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/azucar-lounge-san-francisco-4", "categories":
+        [["Lounges", "lounges"], ["Mexican", "mexican"]], "menu_date_updated": 1445404920,
+        "phone": "4152552982", "snippet_text": "Found this place while waiting for
+        our Asia SF reservation. Loved it so much, we came back after the show, and
+        probably spent more time here than at the...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/nO4ul4ryUs9tK-g8tI81FA/ms.jpg",
+        "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/UMOzmEwjR-GnBHmqvNPOoA/ms.jpg",
+        "display_phone": "+1-415-255-2982", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "azucar-lounge-san-francisco-4",
+        "is_closed": false, "location": {"cross_streets": "Folsom St \u0026 Clementina
+        St", "city": "San Francisco", "display_address": ["299 9th St", "SoMa", "San
+        Francisco, CA 94103"], "geo_accuracy": 9.5, "neighborhoods": ["SoMa"], "postal_code":
+        "94103", "country_code": "US", "address": ["299 9th St"], "coordinate": {"latitude":
+        37.77392, "longitude": -122.411618}, "state_code": "CA"}}, {"is_claimed":
+        true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/oasis-san-francisco-3",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 65, "name": "Oasis", "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/oasis-san-francisco-3", "categories": [["Gay
+        Bars", "gaybars"], ["Performing Arts", "theater"]], "phone": "4157953180",
+        "snippet_text": "Oasis is to die for!  Can''t remember the last time I had
+        this much fun out.  These ladies work!!  I was so impressed by the performances.  Not
+        the typical...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/z_mN0aVGqlldJG5RejK8oA/ms.jpg",
+        "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/ZDlqetuKET_8L7EcEmSWBA/ms.jpg",
+        "display_phone": "+1-415-795-3180", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "oasis-san-francisco-3", "is_closed": false, "location": {"cross_streets":
+        "Folsom St \u0026 Burns Pl", "city": "San Francisco", "display_address": ["298
+        11th St", "SoMa", "San Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods":
+        ["SoMa"], "postal_code": "94103", "country_code": "US", "address": ["298 11th
+        St"], "coordinate": {"latitude": 37.771884, "longitude": -122.41439}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/city-hall-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 293, "name": "City Hall", "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/city-hall-san-francisco", "categories": [["Landmarks
+        \u0026 Historical Buildings", "landmarks"], ["Venues \u0026 Event Spaces",
+        "venues"]], "phone": "4157012311", "snippet_text": "My sister and her husband
+        recently had their wedding ceremony here. It''s still a beautiful, well-kept
+        venue. It was just how I remembered it from my junior...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/4Lwj7uBZI_rw7BEZIHl1Pg/ms.jpg",
+        "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/h7obe2wYjrglTkgXTHt5Eg/ms.jpg",
+        "display_phone": "+1-415-701-2311", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "city-hall-san-francisco", "is_closed": false, "location": {"city":
+        "San Francisco", "display_address": ["1 Dr Carlton B Goodlett Pl", "Civic
+        Center", "San Francisco, CA 94102"], "geo_accuracy": 9.5, "neighborhoods":
+        ["Civic Center"], "postal_code": "94102", "country_code": "US", "address":
+        ["1 Dr Carlton B Goodlett Pl"], "coordinate": {"latitude": 37.7793900915108,
+        "longitude": -122.41861581802401}, "state_code": "CA"}}, {"is_claimed": true,
+        "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/wicked-grounds-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 211, "name": "Wicked Grounds", "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/wicked-grounds-san-francisco", "categories":
+        [["Coffee \u0026 Tea", "coffee"], ["Adult Entertainment", "adultentertainment"]],
+        "menu_date_updated": 1442014899, "phone": "4155030405", "snippet_text": "5
+        stars for originality and for maintaining a presence while a bunch of other
+        original SF establishments have been getting slowly pushed out.\n\nI''ve heard
+        of...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/d36pTeV5uGEB3zXdzh4IAA/ms.jpg",
+        "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/AgipyRSCd_gCkWXKzbninA/ms.jpg",
+        "display_phone": "+1-415-503-0405", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "wicked-grounds-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Tehama St \u0026 Clementina
+        St", "city": "San Francisco", "display_address": ["289 8th St", "SoMa", "San
+        Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"], "postal_code":
+        "94103", "country_code": "US", "address": ["289 8th St"], "coordinate": {"latitude":
+        37.7752914, "longitude": -122.4101868}, "state_code": "CA"}}, {"is_claimed":
+        true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/butter-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1057, "name": "Butter", "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/butter-san-francisco", "categories": [["Dive
+        Bars", "divebars"], ["American (Traditional)", "tradamerican"], ["Dance Clubs",
+        "danceclubs"]], "phone": "4158635964", "snippet_text": "Oooooh Butter...you
+        and your heavy pours, deep fried, and microwave food!\n\nIf you ever see me
+        here I guarantee that I''m already drunk, probably eating a...", "image_url":
+        "http://s3-media3.fl.yelpcdn.com/bphoto/J6QSdHNbuyLmTVwtIWkr6g/ms.jpg", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/D1wCpGEwXREsEbOMEljJ3g/ms.jpg", "display_phone":
+        "+1-415-863-5964", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "butter-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Folsom St \u0026 Harrison St", "city": "San Francisco", "display_address":
+        ["354 11th St", "SoMa", "San Francisco, CA 94103"], "geo_accuracy": 9.5, "neighborhoods":
+        ["SoMa"], "postal_code": "94103", "country_code": "US", "address": ["354 11th
+        St"], "coordinate": {"latitude": 37.771019, "longitude": -122.413343}, "state_code":
+        "CA"}}, {"is_claimed": false, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/blue-bottle-coffee-san-francisco-8",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 1625, "name": "Blue Bottle Coffee", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/blue-bottle-coffee-san-francisco-8", "categories":
+        [["Coffee \u0026 Tea", "coffee"]], "menu_date_updated": 1441946003, "phone":
+        "5106533394", "snippet_text": "Although there''s no indoor cafe and not much
+        outside seating - it''s the best coffee I''ve ever had (sorry Portland, it''s
+        true). That''s why there''s a...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/9S6vMxQNi5UqWdqay-A7ag/ms.jpg",
+        "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/E7EoIhXJ2PPe7SxOkFG-sQ/ms.jpg",
+        "display_phone": "+1-510-653-3394", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "blue-bottle-coffee-san-francisco-8",
+        "is_closed": false, "location": {"cross_streets": "Octavia St \u0026 Gough
+        St", "city": "San Francisco", "display_address": ["315 Linden St", "Hayes
+        Valley", "San Francisco, CA 94102"], "geo_accuracy": 9.5, "neighborhoods":
+        ["Hayes Valley"], "postal_code": "94102", "country_code": "US", "address":
+        ["315 Linden St"], "coordinate": {"latitude": 37.77638, "longitude": -122.423211},
+        "state_code": "CA"}}, {"is_claimed": false, "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/papa-november-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 69, "name": "Papa November", "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/papa-november-san-francisco", "categories":
+        [["Coffee \u0026 Tea", "coffee"]], "snippet_text": "Great place to get a great
+        cup of joe!  They serve stump town coffee and it is all pour over.  They also
+        have some pretty tasty treats!\n\nIt''s a trailer and...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/wgdUOQF61Hb2F6lf7mve_g/ms.jpg",
+        "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/uA4TwjimKpjo6-mdoui-vA/ms.jpg",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "papa-november-san-francisco", "is_closed": false, "location": {"city":
+        "San Francisco", "display_address": ["15th \u0026 Kansas SE Corner", "SoMa",
+        "San Francisco, CA 94103"], "geo_accuracy": 9.5, "neighborhoods": ["SoMa"],
+        "postal_code": "94103", "country_code": "US", "address": ["15th \u0026 Kansas
+        SE Corner"], "coordinate": {"latitude": 37.7672036024795, "longitude": -122.403616905212},
+        "state_code": "CA"}}, {"is_claimed": false, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/sf-eagle-san-francisco-2",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 162, "name": "SF Eagle", "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/sf-eagle-san-francisco-2", "categories": [["Gay
+        Bars", "gaybars"]], "snippet_text": "Added to the list of crazy drinks I ask
+        my bartender to make:\n\n\"Sonic the Hedgehog\"\n\"Pikachu\"\n\"Kirby\"\n\"Sub
+        Zero\"\n\"Gwen Stefani\"\n\nLoving this bar these days,...", "image_url":
+        "http://s3-media1.fl.yelpcdn.com/bphoto/88yhtgWjULA4zx9eRNTnzQ/ms.jpg", "snippet_image_url":
+        "http://s3-media1.fl.yelpcdn.com/photo/X2yg_r-KPK-drLNyjcHf8Q/ms.jpg", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "sf-eagle-san-francisco-2", "is_closed": false, "location": {"cross_streets":
+        "Harrison St \u0026 Bernice St", "city": "San Francisco", "display_address":
+        ["398 12th St", "SoMa", "San Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods":
+        ["SoMa"], "postal_code": "94103", "country_code": "US", "address": ["398 12th
+        St"], "coordinate": {"latitude": 37.7699799, "longitude": -122.41341}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/the-flying-falafel-san-francisco-3",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 368, "name": "The Flying Falafel", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/the-flying-falafel-san-francisco-3", "categories":
+        [["Falafel", "falafel"], ["Vegan", "vegan"], ["Gluten-Free", "gluten_free"]],
+        "menu_date_updated": 1444605464, "phone": "4159641003", "snippet_text": "best
+        food\nbest positive personality\n\nbest show!\n\nkeep up the good work", "image_url":
+        "http://s3-media3.fl.yelpcdn.com/bphoto/jlzz6k3zJX0ypKpOwXn6iQ/ms.jpg", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/Tso_fYB9HX_O0rj5Jl8W4w/ms.jpg", "display_phone":
+        "+1-415-964-1003", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "eat24", "id": "the-flying-falafel-san-francisco-3", "is_closed":
+        false, "location": {"cross_streets": "Golden Gate Ave \u0026 Taylor St", "city":
+        "San Francisco", "display_address": ["1051 Market St", "SoMa", "San Francisco,
+        CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"], "postal_code":
+        "94103", "country_code": "US", "address": ["1051 Market St"], "coordinate":
+        {"latitude": 37.78125, "longitude": -122.4113007}, "state_code": "CA"}}, {"is_claimed":
+        true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/big-chef-toms-belly-burgers-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 181, "name": "Big Chef Tom''s Belly Burgers", "rating_img_url_small":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/big-chef-toms-belly-burgers-san-francisco",
+        "categories": [["Burgers", "burgers"]], "menu_date_updated": 1445587752, "phone":
+        "4155131331", "snippet_text": "This burger was awesome.  First off, since
+        I don''t eat beef, being able to have these options of pork and chicken is
+        just divine.  The pork belly is not...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/j9p0fnaKPJQLFfXnZ70fRQ/ms.jpg",
+        "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/tRnkIcoYTWiU0N92NV_HjA/ms.jpg",
+        "display_phone": "+1-415-513-1331", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "eat24", "id": "big-chef-toms-belly-burgers-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "12th St \u0026 Lafayette
+        St", "city": "San Francisco", "display_address": ["1550 Howard St", "SoMa",
+        "San Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"],
+        "postal_code": "94103", "country_code": "US", "address": ["1550 Howard St"],
+        "coordinate": {"latitude": 37.7724609, "longitude": -122.4165268}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/wish-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 561, "name": "Wish", "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/wish-san-francisco", "categories": [["Lounges",
+        "lounges"], ["Venues \u0026 Event Spaces", "venues"]], "phone": "4154311661",
+        "snippet_text": "I love this bar! Anya makes the best drinks and I must say,
+        the music is really good. They have house music on Wednesdays and some of
+        my favorite DJ''s run...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/T2rh2sHB2rPJgR12WJfeEA/ms.jpg",
+        "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/pzDT7sx41Yb8nmScj9DO-g/ms.jpg",
+        "display_phone": "+1-415-431-1661", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "wish-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "12th St \u0026 11th St", "city": "San Francisco", "display_address": ["1539
+        Folsom St", "SoMa", "San Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods":
+        ["SoMa"], "postal_code": "94103", "country_code": "US", "address": ["1539
+        Folsom St"], "coordinate": {"latitude": 37.77128, "longitude": -122.41444},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/vega-at-langton-san-francisco-2",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 105, "name": "Vega At Langton", "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/vega-at-langton-san-francisco-2", "categories":
+        [["Coffee \u0026 Tea", "coffee"]], "phone": "4152601262", "snippet_text":
+        "Their coffee is delicious! Absolutely no bitter finish. I drink nespresso
+        coffee every day so I''m used to good coffee thank the good lord, but the...",
+        "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/trKIXagHcMtTfhIivZ-zGw/ms.jpg",
+        "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/tKifZHnF9b9hw_nA3A32Gw/ms.jpg",
+        "display_phone": "+1-415-260-1262", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "vega-at-langton-san-francisco-2", "is_closed": false, "location": {"cross_streets":
+        "Dore St \u0026 9th St", "city": "San Francisco", "display_address": ["1246
+        Folsom St", "SoMa", "San Francisco, CA 94103"], "geo_accuracy": 9.5, "neighborhoods":
+        ["SoMa"], "postal_code": "94103", "country_code": "US", "address": ["1246
+        Folsom St"], "coordinate": {"latitude": 37.7745635, "longitude": -122.410969},
+        "state_code": "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/chantal-guillon-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 78, "name": "Chantal Guillon", "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/chantal-guillon-san-francisco", "categories":
+        [["Bakeries", "bakeries"], ["Cafes", "cafes"], ["Macarons", "macarons"]],
+        "menu_date_updated": 1442229126, "phone": "4155121020", "snippet_text": "A
+        hidden gem !\nThe food is 6 star ! \nI had a salmon sandwich with a soup,\nI
+        definitely add this to one of the 100 most delicious foods I ever eat", "image_url":
+        "http://s3-media4.fl.yelpcdn.com/bphoto/8rs0Oix0HG81RP7__aIZrQ/ms.jpg", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/PcAHelyoCsEBjlFeXXeMPQ/ms.jpg", "display_phone":
+        "+1-415-512-1020", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "chantal-guillon-san-francisco",
+        "is_closed": false, "location": {"cross_streets": "Washburn St \u0026 9th
+        St", "city": "San Francisco", "display_address": ["1309 Howard St", "SoMa",
+        "San Francisco, CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"],
+        "postal_code": "94103", "country_code": "US", "address": ["1309 Howard St"],
+        "coordinate": {"latitude": 37.77463, "longitude": -122.41316}, "state_code":
+        "CA"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/deli-board-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 878, "name": "Deli Board", "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/deli-board-san-francisco", "categories": [["Delis",
+        "delis"], ["Sandwiches", "sandwiches"]], "menu_date_updated": 1442017862,
+        "phone": "4155527687", "snippet_text": "Best sandwiches in the city. Everything
+        is the best version of that food you can imagine, if it is pastrami, chicken
+        salad or just the rye bread. The...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/C82q5H4MN58WYa_WbcByfQ/ms.jpg",
+        "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/meFjRgAz5JQJzMBQTuDtYA/ms.jpg",
+        "display_phone": "+1-415-552-7687", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "deli-board-san-francisco", "is_closed":
+        false, "location": {"cross_streets": "Russ St \u0026 Sherman St", "city":
+        "San Francisco", "display_address": ["1058 Folsom St", "SoMa", "San Francisco,
+        CA 94103"], "geo_accuracy": 8.0, "neighborhoods": ["SoMa"], "postal_code":
+        "94103", "country_code": "US", "address": ["1058 Folsom St"], "coordinate":
+        {"latitude": 37.7776794, "longitude": -122.4070892}, "state_code": "CA"}}]}'
+    http_version: 
+  recorded_at: Fri, 23 Oct 2015 21:15:33 GMT
+recorded_with: VCR 2.9.3

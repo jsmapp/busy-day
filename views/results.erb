@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE HTML>
+<html>
+<head>
+		<title> Busy Day | Busy Day</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="Spress v{{ spress.version }}">
+		<meta name="description" content="{{ page.description | default(site.description) }}" />
+		<meta name="keywords" content="{{ page.keywords | default(site.keywords) | join(',') }}" />
+		<!--[if lte IE 8]><script src="/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery/dist/jquery.min.js"></script>
+		<script src="js/skel/dist/skel.min.js"></script>
+		<script src="js/init.js"></script>
+
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.url }}/assets/css/ie/v8.css" /><![endif]-->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+		<link rel="stylesheet" href="css/highlight-theme.css">
+  </head>
+  <body>
+
+
+    <br>
+    <h1> THESE ARE THE TOP 20 PLACES THAT MATCH YOUR SEARCH!</h1>
+    <h2> Click on the place you want for more information. </h2>
+     <div class="container">
+     <% @results.each do |business| %>
+    <br><h2><a href=<%=business.url %>><%= business.name %></a> </h2>
+       <h3><%= business.location.address %>  <%= business.display_phone %></h3>
+       <h4><%= business.reviews %><img src=<%=business.rating_img_url %>></h4>
+      <h4> <%= business.snippet_text %></h4>
+      <br>
+      <br>
+
+     <% end %>
+     </div>
+    <br>
+     <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-2);return true;"></FORM>
+  </body>
+</html>

@@ -1,0 +1,393 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v2/search?ll=37.7577,-122.4376,,,
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - OAuth oauth_consumer_key="<YELP_CONSUMER_KEY>", oauth_nonce="9cd962b4995fb18a50c17dfa2576f74e",
+        oauth_signature="HoYEFi6ugrjZZUO268n4miXi7SA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1445634933", oauth_token="<YELP_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 23 Oct 2015 21:15:34 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Node:
+      - api_com
+      - web57-uswest1bprod
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private
+      Expires:
+      - Fri, 23 Oct 2015 21:15:33 GMT
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - bse=f3ef8b8225a771c3bbc8819a66e4b14e; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=hdJnno_Frz4V-O_ilbRfZhkdJMefo6I71up5oQ9uLpzvklNY_4oLo46vcPXv4U-zeGOHd8y_AbU2g5CRYfvTk3RB-gnw24Pv;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Thu, 18-Oct-2035 21:15:33
+        GMT
+      Vary:
+      - Accept-Encoding,User-Agent
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-64-0-111-uswest1aprod
+    body:
+      encoding: UTF-8
+      string: '{"region": {"span": {"latitude_delta": 0.015491277150246674, "longitude_delta":
+        0.015165671335097386}, "center": {"latitude": 37.75819112982575, "longitude":
+        -122.4329202869705}}, "total": 11534, "businesses": [{"is_claimed": false,
+        "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/seward-street-slides-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 495, "name": "Seward Street Slides", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/0EHgtYMEgFG-OSgrf6kkAw/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/seward-street-slides-san-francisco", "categories":
+        [["Parks", "parks"]], "snippet_text": "I don''t care if you''re an adult -
+        you''re coming here if you''re in SF. This small park is in the middle of
+        a residential area. Looking at pictures of the...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/sEQFQT2Dkx6XjSZgul5V3Q/ms.jpg",
+        "location": {"city": "San Francisco", "display_address": ["Seward St", "Castro",
+        "San Francisco, CA 94114"], "geo_accuracy": 9.5, "neighborhoods": ["Castro"],
+        "postal_code": "94114", "country_code": "US", "address": ["Seward St"], "coordinate":
+        {"latitude": 37.7579189398193, "longitude": -122.439813773941}, "state_code":
+        "CA"}, "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "seward-street-slides-san-francisco", "is_closed": false, "distance":
+        196.13272113964354}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/philz-coffee-san-francisco-2",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 898, "name": "Philz Coffee", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/QmJAC8diqFOSjqlkcJF0Cw/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/philz-coffee-san-francisco-2", "categories":
+        [["Coffee \u0026 Tea", "coffee"]], "menu_date_updated": 1441967199, "phone":
+        "4158759656", "snippet_text": "15.10.12.  FIRST visit at new location!!!\n\nThis
+        ACTUALLY relocation\n\nBEAUTIFUL\n\nThe old tiny place was on 18th\n\nLarge  wide
+        foldable window\n  Bug comes in...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/OtoOZjPSmdGW5pQTe8B2Yw/ms.jpg",
+        "location": {"cross_streets": "19th St \u0026 18th St", "city": "San Francisco",
+        "display_address": ["549 Castro St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 9.5, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["549 Castro St"], "coordinate": {"latitude":
+        37.7601254, "longitude": -122.4348964}, "state_code": "CA"}, "display_phone":
+        "+1-415-875-9656", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "philz-coffee-san-francisco-2",
+        "is_closed": false, "distance": 359.47552268506354}, {"is_claimed": true,
+        "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/anchor-oyster-bar-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 1004, "name": "Anchor Oyster Bar", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/S3eytTBrwViDB45Q0okbRQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/anchor-oyster-bar-san-francisco", "categories":
+        [["Seafood", "seafood"]], "menu_date_updated": 1441947466, "phone": "4154313990",
+        "snippet_text": "The 1000th review! =)\n\nNot only is the food obviously awesome
+        here - the staff and how they treat their customers speak volumes to the kind
+        of establishment...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/D-LSXw7GVsx7EB6FLoaaRw/ms.jpg",
+        "location": {"cross_streets": "19th St \u0026 18th St", "city": "San Francisco",
+        "display_address": ["579 Castro St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 9.5, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["579 Castro St"], "coordinate": {"latitude":
+        37.759578536181, "longitude": -122.43472089181}, "state_code": "CA"}, "display_phone":
+        "+1-415-431-3990", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "anchor-oyster-bar-san-francisco",
+        "is_closed": false, "distance": 328.1673514312084}, {"is_claimed": true, "rating":
+        4.5, "mobile_url": "http://m.yelp.com/biz/five-star-truffles-co-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 157, "name": "Five Star Truffles Co.", "snippet_image_url":
+        "http://s3-media4.fl.yelpcdn.com/photo/ImT3JFTJyQbpgkDVcvUpwg/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/five-star-truffles-co-san-francisco", "categories":
+        [["Coffee \u0026 Tea", "coffee"], ["Chocolatiers \u0026 Shops", "chocolate"]],
+        "menu_date_updated": 1443622068, "phone": "4155525128", "snippet_text": "My
+        husband and I stumbled across this little slice of heaven a couple of weeks
+        ago when just browsing around the Castro.\n\nSantos is beyond sweet and kind
+        --...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/no5w7xOoQ6QqIX9eSm4Fsg/ms.jpg",
+        "location": {"city": "San Francisco", "display_address": ["4251 A 18th St",
+        "Castro", "San Francisco, CA 94114"], "geo_accuracy": 8.0, "neighborhoods":
+        ["Castro"], "postal_code": "94114", "country_code": "US", "address": ["4251
+        A 18th St"], "coordinate": {"latitude": 37.7605782, "longitude": -122.4369278},
+        "state_code": "CA"}, "display_phone": "+1-415-552-5128", "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "eat24", "id": "five-star-truffles-co-san-francisco", "is_closed":
+        false, "distance": 336.4448378313596}, {"is_claimed": true, "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/spikes-coffees-and-teas-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 162, "name": "Spike''s Coffees \u0026 Teas", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/uYZ3NfTBDnOR-IgQRqAxRA/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/spikes-coffees-and-teas-san-francisco", "categories":
+        [["Coffee \u0026 Tea", "coffee"]], "phone": "4156265573", "snippet_text":
+        "**Charming coffee shop in the Castro.**\n\nI was waiting to meet some friends
+        for dinner and searched for a coffee shop in the Castro. It''s a little off
+        of...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/wY7ukFaia26W8pCMKzepxw/ms.jpg",
+        "location": {"cross_streets": "Castro St \u0026 Collingwood St", "city": "San
+        Francisco", "display_address": ["4117 19th St", "Castro", "San Francisco,
+        CA 94114"], "geo_accuracy": 8.0, "neighborhoods": ["Castro"], "postal_code":
+        "94114", "country_code": "US", "address": ["4117 19th St"], "coordinate":
+        {"latitude": 37.75916, "longitude": -122.43503}, "state_code": "CA"}, "display_phone":
+        "+1-415-626-5573", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "spikes-coffees-and-teas-san-francisco", "is_closed": false, "distance":
+        273.89385058474477}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/castro-coffee-company-san-francisco-2",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 154, "name": "Castro Coffee Company", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/c6fYvOB30RlffyWUJAjiVQ/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/castro-coffee-company-san-francisco-2", "categories":
+        [["Coffee \u0026 Tea", "coffee"]], "menu_date_updated": 1445604694, "phone":
+        "4155526676", "snippet_text": "Whether you are looking for a quick cup of
+        coffee or some beans to take home, this is the perfect one-stop shop! Conveniently
+        located in the heart of...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/fxR4usfYKWO528P5I-NK4Q/ms.jpg",
+        "location": {"cross_streets": "17th St \u0026 Market St", "city": "San Francisco",
+        "display_address": ["427 Castro St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 9.5, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["427 Castro St"], "coordinate": {"latitude":
+        37.7621868135634, "longitude": -122.434965349623}, "state_code": "CA"}, "display_phone":
+        "+1-415-552-6676", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "castro-coffee-company-san-francisco-2",
+        "is_closed": false, "distance": 550.0498738499969}, {"is_claimed": false,
+        "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/tom-and-jerrys-house-san-francisco",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 29, "name": "Tom and Jerry''s House", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/Yu84UGAMGFC9ZIvs7lBykw/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/tom-and-jerrys-house-san-francisco", "categories":
+        [["Local Flavor", "localflavor"]], "snippet_text": "One of our favorite SF
+        Xmas traditions is to just drive by unsuspecting out-of-towners past the TJ
+        House. OTT in the best of ways!", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/9ex0NOn7HiUdLRiDXfOroA/ms.jpg",
+        "location": {"cross_streets": "Church St \u0026 Sanchez St", "city": "San
+        Francisco", "display_address": ["3650 21st St", "Castro", "San Francisco,
+        CA 94114"], "geo_accuracy": 8.0, "neighborhoods": ["Castro"], "postal_code":
+        "94114", "country_code": "US", "address": ["3650 21st St"], "coordinate":
+        {"latitude": 37.756668, "longitude": -122.42907}, "state_code": "CA"}, "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "tom-and-jerrys-house-san-francisco", "is_closed": false, "distance":
+        758.3759640104187}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/frances-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 1139, "name": "Frances", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/O1-8NnIHC29nMVZ_OfaD6w/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/frances-san-francisco", "categories": [["American
+        (New)", "newamerican"]], "menu_date_updated": 1441902087, "phone": "4156213870",
+        "snippet_text": "I''ve cooked in Michelin Star (Sweden) and this food is off
+        the charts. Very impressed with textures, flavors, and plating. \n\nI chose
+        to order all four...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/JeUqkHV0Za2ZLU7fpdd_9g/ms.jpg",
+        "location": {"cross_streets": "Pond St \u0026 Noe St", "city": "San Francisco",
+        "display_address": ["3870 17th St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 9.5, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["3870 17th St"], "coordinate": {"latitude":
+        37.7627220154927, "longitude": -122.432276324008}, "state_code": "CA"}, "display_phone":
+        "+1-415-621-3870", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "frances-san-francisco", "is_closed":
+        false, "distance": 728.5990873175072}, {"is_claimed": true, "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/philz-coffee-san-francisco-6", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 235, "name": "Philz Coffee", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/uoVt22mdyPYn1MQI2uFsdw/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/philz-coffee-san-francisco-6", "categories":
+        [["Coffee \u0026 Tea", "coffee"]], "phone": "4158171510", "snippet_text":
+        "Super friendly and helpful staff and a cozy place to work and chit chat.
+        Not being from the area, we were kind of confused by the ordering system at
+        Philz...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/XTiO_NgLFisgFGyMYNBgeQ/ms.jpg",
+        "location": {"cross_streets": "Douglass St \u0026 Diamond St", "city": "San
+        Francisco", "display_address": ["4298 24th St", "Noe Valley", "San Francisco,
+        CA 94114"], "geo_accuracy": 9.5, "neighborhoods": ["Noe Valley"], "postal_code":
+        "94114", "country_code": "US", "address": ["4298 24th St"], "coordinate":
+        {"latitude": 37.751149640212, "longitude": -122.43838046048}, "state_code":
+        "CA"}, "display_phone": "+1-415-817-1510", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "philz-coffee-san-francisco-6", "is_closed": false, "distance": 731.5914917132678},
+        {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/ikes-place-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 6791, "name": "Ike''s Place", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/LTLDJtugdGyKu4Pk2-uMog/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/ikes-place-san-francisco", "categories": [["Sandwiches",
+        "sandwiches"]], "menu_date_updated": 1445588108, "phone": "4155536888", "snippet_text":
+        "Ike''s is the best sandwich place in town. Period. \n\nDo yourself a favor
+        and look online for the menu. There are hundreds of sandwiches and in house
+        they...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/9jSqZ0UH03FXarOq80Bpww/ms.jpg",
+        "location": {"cross_streets": "Dehon St \u0026 Sanchez St", "city": "San Francisco",
+        "display_address": ["3489 16th St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 9.5, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["3489 16th St"], "coordinate": {"latitude":
+        37.7642944915352, "longitude": -122.430696487427}, "state_code": "CA"}, "display_phone":
+        "+1-415-553-6888", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "eat24", "id": "ikes-place-san-francisco", "is_closed": false,
+        "distance": 951.8316300150642}, {"is_claimed": true, "rating": 4.5, "mobile_url":
+        "http://m.yelp.com/biz/eureka-cafe-san-francisco-2", "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 54, "name": "Eureka! Cafe", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/A0FCkXgEOpgIkrTVpZBAQQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/eureka-cafe-san-francisco-2", "categories":
+        [["Cafes", "cafes"], ["Coffee \u0026 Tea", "coffee"], ["Ice Cream \u0026 Frozen
+        Yogurt", "icecream"]], "menu_date_updated": 1442199224, "phone": "4153559110",
+        "snippet_text": "This is probably one of the few local businesses in San Francisco
+        that serves coffee (with pastries of course), sodas and ice cream! I occassionally
+        come...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/JOF3jnKEyeiJoR0fNy6nkg/ms.jpg",
+        "location": {"cross_streets": "18th St \u0026 17th St", "city": "San Francisco",
+        "display_address": ["451 Castro St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 8.0, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["451 Castro St"], "coordinate": {"latitude":
+        37.76173, "longitude": -122.434792}, "state_code": "CA"}, "display_phone":
+        "+1-415-355-9110", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "eureka-cafe-san-francisco-2", "is_closed":
+        false, "distance": 511.4799698146614}, {"is_claimed": false, "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/dolores-park-san-francisco", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 1213, "name": "Dolores Park", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/8q2Ll1t-5Gnx8__PHiv_JQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/dolores-park-san-francisco", "categories":
+        [["Parks", "parks"], ["Local Flavor", "localflavor"]], "snippet_text": "This
+        is probably the coolest place I''ve been to in San Fran. At any day or any
+        time this park is bustling with an array of unique faces looking to escape...",
+        "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/sQrjM7zXwBJvEOxhNemglw/ms.jpg",
+        "location": {"cross_streets": "18th St \u0026 Dolores St", "city": "San Francisco",
+        "display_address": ["Dolores St", "Castro", "San Francisco, CA 94114"], "geo_accuracy":
+        9.5, "neighborhoods": ["Castro"], "postal_code": "94114", "country_code":
+        "US", "address": ["Dolores St"], "coordinate": {"latitude": 37.7598415490857,
+        "longitude": -122.426941394806}, "state_code": "CA"}, "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "dolores-park-san-francisco", "is_closed": false, "distance": 966.7863072819182},
+        {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/last-call-bar-san-francisco-2",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 60, "name": "Last Call Bar", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/nZqnOUbAcEw8AxQw0OWW5w/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/last-call-bar-san-francisco-2", "categories":
+        [["Gay Bars", "gaybars"], ["Dive Bars", "divebars"], ["Pubs", "pubs"]], "phone":
+        "4158611310", "snippet_text": "This place was the highlight of our day! Great
+        little Irish pub feel in the heart of the Castro. The owner Kevin is so friendly
+        and makes you feel right at...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/gSDHodt-o_-h-bp9Vy2Csg/ms.jpg",
+        "location": {"cross_streets": "Sanchez St \u0026 Noe St", "city": "San Francisco",
+        "display_address": ["3988 18th St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 8.0, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["3988 18th St"], "coordinate": {"latitude":
+        37.7610779553652, "longitude": -122.432421147823}, "state_code": "CA"}, "display_phone":
+        "+1-415-861-1310", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "last-call-bar-san-francisco-2", "is_closed": false, "distance": 587.3737190772188},
+        {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/swirl-on-castro-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 92, "name": "Swirl on Castro", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/Y8Ik5xeCIsSl4PvuLVe1fA/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/swirl-on-castro-san-francisco", "categories":
+        [["Beer, Wine \u0026 Spirits", "beer_and_wine"], ["Wine Bars", "wine_bars"]],
+        "phone": "4158642262", "snippet_text": "My husband and I stopped in here for
+        the first time this past weekend.  It''s been on my bookmarks for quite a
+        while, but we just never seemed to make a...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/Ht5DmeDDhHY2799jPVz3Fg/ms.jpg",
+        "location": {"cross_streets": "18th St \u0026 19th St", "city": "San Francisco",
+        "display_address": ["572 Castro St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 8.0, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["572 Castro St"], "coordinate": {"latitude":
+        37.75972, "longitude": -122.43525}, "state_code": "CA"}, "display_phone":
+        "+1-415-864-2262", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "swirl-on-castro-san-francisco", "is_closed": false, "distance": 313.3449022966298},
+        {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/firefly-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 1258, "name": "Firefly", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/a65jNUVs8As3wbxsr0LGyA/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/firefly-san-francisco", "categories": [["American
+        (New)", "newamerican"], ["Vegetarian", "vegetarian"]], "menu_date_updated":
+        1445604594, "phone": "4158217652", "snippet_text": "So good! We came here
+        for a friend''s birthday dinner. It wasn''t fast.  But O. M. G. So good. I
+        had the steak - YOWZERS - the sear was perfect \u0026 the...", "image_url":
+        "http://s3-media4.fl.yelpcdn.com/bphoto/B96X9a20_UfUSvSdik76yA/ms.jpg", "location":
+        {"cross_streets": "Douglass St \u0026 Diamond St", "city": "San Francisco",
+        "display_address": ["4288 24th St", "Noe Valley", "San Francisco, CA 94114"],
+        "geo_accuracy": 9.5, "neighborhoods": ["Noe Valley"], "postal_code": "94114",
+        "country_code": "US", "address": ["4288 24th St"], "coordinate": {"latitude":
+        37.751206, "longitude": -122.438189}, "state_code": "CA"}, "display_phone":
+        "+1-415-821-7652", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "firefly-san-francisco", "is_closed":
+        false, "distance": 723.9541356050274}, {"is_claimed": false, "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/corona-heights-park-san-francisco", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 148, "name": "Corona Heights Park", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/n6Bx0wh4r0PGjRDkuU0bxg/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/corona-heights-park-san-francisco", "categories":
+        [["Dog Parks", "dog_parks"]], "snippet_text": "Sweeping views from GG bridge
+        to the west and bay bridge to the east. An enclosed dog run with watering
+        station.  Nice  incline path to the peak.  A few...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/UEFnoLDtFYUM4J_Qi4oLwA/ms.jpg",
+        "location": {"city": "San Francisco", "display_address": ["32 Museum Way",
+        "Corona Heights", "San Francisco, CA 94114"], "geo_accuracy": 9.5, "neighborhoods":
+        ["Corona Heights"], "postal_code": "94114", "country_code": "US", "address":
+        ["32 Museum Way"], "coordinate": {"latitude": 37.7652326194395, "longitude":
+        -122.439369238287}, "state_code": "CA"}, "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "corona-heights-park-san-francisco", "is_closed": false, "distance":
+        851.9064268358836}, {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/fable-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 260, "name": "Fable", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/i8EGUTTFEV6KATZMnriY0g/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/fable-san-francisco", "categories": [["American
+        (New)", "newamerican"]], "menu_date_updated": 1442113884, "phone": "4155902404",
+        "snippet_text": "Amazingly good short ribs and peach cobbler with Blackberry
+        ice cream.   This little restaurant is a pleasant surprise in this neighborhood
+        with a wonderful...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/mpfyZP4vHMxB82tuDpOF7A/ms.jpg",
+        "location": {"cross_streets": "19th St \u0026 18th St", "city": "San Francisco",
+        "display_address": ["558 Castro St", "Castro", "San Francisco, CA 94114"],
+        "geo_accuracy": 9.5, "neighborhoods": ["Castro"], "postal_code": "94114",
+        "country_code": "US", "address": ["558 Castro St"], "coordinate": {"latitude":
+        37.7600032, "longitude": -122.434921}, "state_code": "CA"}, "display_phone":
+        "+1-415-590-2404", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "fable-san-francisco", "is_closed":
+        false, "distance": 347.9294587310235}, {"is_claimed": true, "rating": 4.5,
+        "mobile_url": "http://m.yelp.com/biz/truffle-man-san-francisco", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 83, "name": "Truffle Man", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/i_r71rhnKJw4tBHDm7rc0g/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/truffle-man-san-francisco", "categories":
+        [["Local Flavor", "localflavor"]], "snippet_text": "Great truffles - potent
+        and delicious. Every flavor is tasty, but Espresso is really the best - bitter,
+        sweet, coffee-rich, and strong.\n\nThe price is right,...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/XmLXqsNa_RvCek4B__PVgQ/ms.jpg",
+        "location": {"city": "San Francisco", "display_address": ["566 Dolores St",
+        "Castro", "San Francisco, CA 94199"], "geo_accuracy": 9.5, "neighborhoods":
+        ["Castro"], "postal_code": "94199", "country_code": "US", "address": ["566
+        Dolores St"], "coordinate": {"latitude": 37.7597799, "longitude": -122.4260268},
+        "state_code": "CA"}, "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "truffle-man-san-francisco", "is_closed": false, "distance": 1043.3586543742074},
+        {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/diamond-cafe-san-francisco",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 62, "name": "Diamond Cafe", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/ARE--xA-5JLg61P0JuELJw/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/diamond-cafe-san-francisco", "categories":
+        [["Cafes", "cafes"], ["American (New)", "newamerican"]], "phone": "4156553674",
+        "snippet_text": "My 2nd FIVE star rating in less than 24 hours. Karma?  This
+        one is overdue. \n\nI stumbled upon DC in my new neighborhood when I was looking
+        for a good cup of...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/yoPwcO3XujfyYY9Hd-GnRA/ms.jpg",
+        "location": {"cross_streets": "24th St \u0026 Elizabeth St", "city": "San
+        Francisco", "display_address": ["751 Diamond St", "Noe Valley", "San Francisco,
+        CA 94114"], "geo_accuracy": 9.5, "neighborhoods": ["Noe Valley"], "postal_code":
+        "94114", "country_code": "US", "address": ["751 Diamond St"], "coordinate":
+        {"latitude": 37.7512897856745, "longitude": -122.43616884886}, "state_code":
+        "CA"}, "display_phone": "+1-415-655-3674", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "diamond-cafe-san-francisco", "is_closed": false, "distance": 723.8029791162363},
+        {"is_claimed": true, "rating": 4.0, "mobile_url": "http://m.yelp.com/biz/r%C3%A9veille-coffee-co-san-francisco-6",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 195, "name": "R\u00e9veille Coffee Co.", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/ssm7Eph5W_CLRYyDZkAYHQ/ms.jpg", "rating_img_url_small":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "url": "http://www.yelp.com/biz/r%C3%A9veille-coffee-co-san-francisco-6",
+        "categories": [["Coffee \u0026 Tea", "coffee"], ["Cafes", "cafes"]], "menu_date_updated":
+        1442202848, "phone": "4157896258", "snippet_text": "Avocado, egg, and coffee.
+        Throw in a cute little shop with a cool ambience and friendly workers. What
+        else do you need? When you walk into Reveille...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/FjVbqJic7vXFo9JN7X1Dgg/ms.jpg",
+        "location": {"cross_streets": "Hartford St \u0026 Castro St", "city": "San
+        Francisco", "display_address": ["4076 18th St", "Castro", "San Francisco,
+        CA 94114"], "geo_accuracy": 8.0, "neighborhoods": ["Castro"], "postal_code":
+        "94114", "country_code": "US", "address": ["4076 18th St"], "coordinate":
+        {"latitude": 37.760963961482, "longitude": -122.434460967779}, "state_code":
+        "CA"}, "display_phone": "+1-415-789-6258", "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "r\u00e9veille-coffee-co-san-francisco-6",
+        "is_closed": false, "distance": 463.13890402427944}]}'
+    http_version: 
+  recorded_at: Fri, 23 Oct 2015 21:15:34 GMT
+recorded_with: VCR 2.9.3

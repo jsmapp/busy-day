@@ -1,0 +1,51 @@
+
+<head>
+		<title> Busy Day | Busy Day</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="Spress v{{ spress.version }}">
+		<meta name="description" content="{{ page.description | default(site.description) }}" />
+		<meta name="keywords" content="{{ page.keywords | default(site.keywords) | join(',') }}" />
+		<!--[if lte IE 8]><script src="/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery/dist/jquery.min.js"></script>
+		<script src="js/skel/dist/skel.min.js"></script>
+		<script src="js/init.js"></script>
+
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.url }}/assets/css/ie/v8.css" /><![endif]-->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+		<link rel="stylesheet" href="css/highlight-theme.css">
+
+	</head>
+<section>
+
+
+  <header>
+<header class="major container 75%" id="about_header">
+		<h2> <br> Start exploring and find your perfect adventure!  <br><br> </h2>
+	</header>
+
+	<p>
+     <div class="container">
+   <!-- #food place -->
+    <form method="POST" action="/yelp">
+    <h3>Enter in your current location below.</h3>
+    <input type="text" name="location">
+    <h3> Where are you looking to start exploring? (Cliff Diving, Hikes, etc.)</h3>
+    <input type="text" name="type">
+    <h3> What is your price limit?</h3>
+    <input type="text" name="limit">
+      <br>
+    <input type="submit">
+  </form>
+  </div>
+
+
+
+
+
+
+	</p>
+</section>
